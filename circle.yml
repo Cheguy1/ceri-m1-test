@@ -9,4 +9,4 @@ machine:
 
 test:
   override: 
-    - mvn verify --settings .travis.settings.xml -e
+    - mvn verify --settings
