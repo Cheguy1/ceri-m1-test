@@ -1,0 +1,12 @@
+general:
+  branches:
+    only:
+      - master
+
+machine:
+  java:
+    version: oraclejdk8
+
+test:
+  override: 
+    - mvn verify --settings .travis.settings.xml -e
