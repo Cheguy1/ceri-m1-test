@@ -7,3 +7,7 @@ machine:
   java:
     version: oraclejdk8
 
+dependencies:
+  override: 
+    - mvn dependency:resolve-plugins --update-snapshots 
+    - mvn dependency:resolve --update-snapshots
