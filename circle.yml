@@ -11,3 +11,7 @@ dependencies:
   override: 
     - mvn dependency:resolve-plugins --update-snapshots 
     - mvn dependency:resolve --update-snapshots
+
+test:
+  override:
+    - maven test
