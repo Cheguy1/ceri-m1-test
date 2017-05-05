@@ -32,7 +32,7 @@ public class IPokemonMetadataProviderTest {
 	
 	public static void configure(IPokemonMetadataProvider i) {
 		try {
-			when(i.getPokemonMetadata(123)).thenReturn(new PokemonMetadata(0,"Bulbizarre",126,126,90));
+			when(i.getPokemonMetadata(0)).thenReturn(new PokemonMetadata(0,"Bulbizarre",126,126,90));
 		} catch (PokedexException e) {e.printStackTrace();}
 	}
 	
