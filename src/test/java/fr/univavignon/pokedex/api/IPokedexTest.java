@@ -29,7 +29,7 @@ public class IPokedexTest {
     @Mock
     protected IPokedex ipokedexMockAdd;
     
-    protected Pokemon Bulbizarre = new Pokemon(1, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56);
+    protected Pokemon bulbasaur = new Pokemon(1, "bulbasaur", 126, 126, 90, 613, 64, 4000, 4, 56);
     protected Pokemon Aquali = new Pokemon(133, "Aquali", 186, 168, 260, 2729, 202, 5000, 4, 100);
     
     protected int pokeSize =  0;
@@ -38,10 +38,10 @@ public class IPokedexTest {
     @Before
     public void setUp() throws PokedexException {
     	
-        when(ipokedexMock.getPokemon(0)).thenReturn(Bulbizarre);
+        when(ipokedexMock.getPokemon(0)).thenReturn(bulbasaur);
 
         List<Pokemon> pokeList = new ArrayList<>();
-        pokeList.add(Bulbizarre);
+        pokeList.add(bulbasaur);
         pokeList.add(Aquali);
 
         when(ipokedexMock.getPokemons()).thenReturn(Collections.unmodifiableList(pokeList));
@@ -50,7 +50,7 @@ public class IPokedexTest {
         when(ipokedexMock.getPokemons(PokemonComparators.NAME)).thenReturn(Collections.unmodifiableList(pokeList));
         when(ipokedexMock.getPokemons(PokemonComparators.CP)).thenReturn(Collections.unmodifiableList(pokeList));
         
-        when(ipokedexMockAdd.addPokemon(Bulbizarre)).thenReturn(0);
+        when(ipokedexMockAdd.addPokemon(bulbasaur)).thenReturn(0);
         when(ipokedexMockAdd.addPokemon(Aquali)).thenReturn(1);
         when(ipokedexMockAdd.size()).thenReturn(2);
     	
@@ -73,7 +73,7 @@ public class IPokedexTest {
     @Test
     public void testAddPoke() {
     	
-        assertEquals(0, ipokedexMockAdd.addPokemon(Bulbizarre));
+        assertEquals(0, ipokedexMockAdd.addPokemon(bulbasaur));
         assertEquals(1, ipokedexMockAdd.addPokemon(Aquali));
         assertEquals(2, ipokedexMockAdd.size());
     }  
