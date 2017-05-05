@@ -22,7 +22,7 @@ public class IPokemonFactoryTest {
 
     @Before
     public void setUp() throws PokedexException {
-        when(ipokeFacMock.createPokemon(1, 613, 64, 4000, 4)).thenReturn(new Pokemon(1, "bulbasaur", 126, 126, 90, 613, 64, 4000, 4, 56));
+        when(ipokeFacMock.createPokemon(1, 613, 64, 4000, 4)).thenReturn(new Pokemon(1, "bulbasaur", 49, 49, 90, 613, 64, 4000, 4, 56));
     }
 
     @Test
@@ -30,8 +30,8 @@ public class IPokemonFactoryTest {
         Pokemon pokemon = ipokeFacMock.createPokemon(1, 613, 64, 4000, 4);
         assertNotNull(pokemon);
         assertEquals("bulbasaur", pokemon.getName());
-        assertEquals(126, pokemon.getAttack());
-        assertEquals(126, pokemon.getDefense());
+        assertEquals(49, pokemon.getAttack());
+        assertEquals(49, pokemon.getDefense());
         assertEquals(90, pokemon.getStamina());
         assertEquals(613, pokemon.getCp());
         assertEquals(64, pokemon.getHp());

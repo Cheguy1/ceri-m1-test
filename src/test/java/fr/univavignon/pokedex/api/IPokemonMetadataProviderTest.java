@@ -25,14 +25,14 @@ public class IPokemonMetadataProviderTest {
 	
 	@Before
 	public void setUp() {
-		pokemeta = new PokemonMetadata(1,"bulbasaur",126,126,90);
+		pokemeta = new PokemonMetadata(1, "bulbasaur", 49, 49, 90);
 		configure(ipokemetaprovider);
 
 	}
 	
 	public static void configure(IPokemonMetadataProvider i) {
 		try {
-			when(i.getPokemonMetadata(1)).thenReturn(new PokemonMetadata(1,"bulbasaur",126,126,90));
+			when(i.getPokemonMetadata(1)).thenReturn(new PokemonMetadata(1, "bulbasaur", 49, 49, 90));
 		} catch (PokedexException e) {e.printStackTrace();}
 	}
 	
@@ -40,7 +40,7 @@ public class IPokemonMetadataProviderTest {
 	@Test
 	public void test() {
 		
-		PokemonMetadata pm = new PokemonMetadata(1,"bulbasaur",126,126,90);
+		PokemonMetadata pm = new PokemonMetadata(1, "bulbasaur", 49, 49, 90);
 		int index = 1;
 		assertNotNull(ipokemetaprovider);
 		try {
