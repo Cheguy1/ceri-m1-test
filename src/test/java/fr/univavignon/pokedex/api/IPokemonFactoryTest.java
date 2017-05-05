@@ -22,12 +22,12 @@ public class IPokemonFactoryTest {
 
     @Before
     public void setUp() throws PokedexException {
-        when(ipokeFacMock.createPokemon(0, 613, 64, 4000, 4)).thenReturn(new Pokemon(0, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56));
+        when(ipokeFacMock.createPokemon(1, 613, 64, 4000, 4)).thenReturn(new Pokemon(1, "Bulbizarre", 126, 126, 90, 613, 64, 4000, 4, 56));
     }
 
     @Test
     public void testCreatePoke() {
-        Pokemon pokemon = ipokeFacMock.createPokemon(0, 613, 64, 4000, 4);
+        Pokemon pokemon = ipokeFacMock.createPokemon(1, 613, 64, 4000, 4);
         assertNotNull(pokemon);
         assertEquals("Bulbizarre", pokemon.getName());
         assertEquals(126, pokemon.getAttack());
