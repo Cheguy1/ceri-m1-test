@@ -1,0 +1,22 @@
+!SESSION 2017-04-05 13:08:02.960 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/floriandemol/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/floriandemol/.eclipse_keyring
+
+!ENTRY org.eclipse.emf.ecore 2 0 2017-04-05 13:08:20.223
+!MESSAGE Both 'org.eclipse.fx.ide.css.ui' and 'org.eclipse.papyrus.infra.gmfdiag.css3.xtext.ui' register an extension parser for 'css'
+
+!ENTRY org.eclipse.ui 2 0 2017-04-05 13:08:20.783
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-04-05 13:08:20.784
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.papyrus.revisiontool', id='org.eclipse.papyrus.revisiontool.commands.ReviewCreateHandler'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-04-05 13:08:20.784
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.papyrus.revisiontool', id='org.eclipse.papyrus.revisiontool.commands.deletereview'
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-04-05 13:08:20.784
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.papyrus.revisiontool', id='org.eclipse.papyrus.revisiontool.commands.hookreview'
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-05 13:08:23.822
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
