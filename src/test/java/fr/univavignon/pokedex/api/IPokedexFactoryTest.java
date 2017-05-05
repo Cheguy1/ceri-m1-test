@@ -1,6 +1,6 @@
 package fr.univavignon.pokedex.api;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.when;
 
 import org.junit.Before;
